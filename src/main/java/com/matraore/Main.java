@@ -20,10 +20,10 @@ public class Main {
         GreetResponse greetResponse = new GreetResponse(
                 "Hello",
                 List.of("Java", "Golang", "Angular"),
-                new Person("Moctar"));
+                new Person("Moctar", 26, 10000));
         return greetResponse;
     }
-    record Person(String name) {
+    record Person(String name, int age, double savings) {
 
     }
 
